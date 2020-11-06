@@ -1,21 +1,17 @@
-# Lumen PHP Framework
+# Rx Savings API to get closest pharmacies
+**Programming language used:**
+<br/>•	PHP 5.6
+<br/>•	Lumen Framework 5.4
+<br/><br/>**Database:**
+<br/>•	MySQL
+<br/><br/>**Dependencies:**
+<br/>•	Composer 2.0.4
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
-
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
 ## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+Documentation for the API can be found in the email.
 
-## Security Vulnerabilities
+## Explanation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Lumen is used to create a single endpoint API that takes location as an input and returns the closest pharmacy to entered coordinates. The controller of the API calls the Pharmacy model which gets the data from the database. The query calculates the closest distance from the provided latitude and longitude. The output of the API has Name, Address, City, State, Zip and Miles in a consumable response packet.
