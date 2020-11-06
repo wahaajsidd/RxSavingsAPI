@@ -15,10 +15,6 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-/*$app->group(['prefix' => 'api'], function () use ($app) {
-    $app->get('pharmacy/{location}', 'PharmacyController@GetPharmacyByLocation');
-});*/
-
 $app->group(['prefix' => 'api'], function () use ($app) {
     $app->get('pharmacy', 'PharmacyController@GetPharmacyByLocation');
 });

@@ -6,24 +6,6 @@ use Illuminate\Http\Request;
 
 class PharmacyController extends Controller
 {
-    /*public static function GetPharmacyByLocation($location)
-    {
-        if(is_null($location))
-        {
-            return response()->Json('Please type the location.');
-        }
-        else
-        {
-            $coordinate = explode(',', str_replace('%20','',$location));
-            if(isset($coordinate[1]))
-            {
-                return response()->Json(Pharmacy::getClosestPharmacy($coordinate[0],$coordinate[1]));
-            } else {
-                return response()->Json('Please type valid coordinates');
-            }
-        }
-    }*/
-
     public static function GetPharmacyByLocation(Request $request)
     {
 
